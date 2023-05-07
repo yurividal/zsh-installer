@@ -44,5 +44,8 @@ echo "ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history completion)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=2'
 source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
 
+echo "alias up='docker compose up -d'
+alias down='docker compose down -v'" >> ~/.zshrc
+
 rm ~/.zsh_history
 cp ~/.bash_history ~/.zsh_history
